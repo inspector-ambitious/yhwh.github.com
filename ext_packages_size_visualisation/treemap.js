@@ -41,4 +41,9 @@
     });
     a.loadJSON(kTree);
     a.refresh();
+
+    var back = $jit.id('back');
+    $jit.util.addEvent(back, 'click', function() {
+        a.out();
+    });
 })();
